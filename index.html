@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+          <h1 class="logo">portfolio</h1>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#about">About me</a></li>
+              <li><a href="#portfolio">Work</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About me</h2>
+      <img src="images/profile.jpg" alt="รูปโปรไฟล์" class="profile-img" />
+      <p>
+        Hello, my name is <strong>Wachiraporn</strong>. I am currently pursuing a bachelor's degree in Information Technology.  
+        I have an interest in web and application development, as well as user experience (UI/UX) design.  
+        I have foundational knowledge in programming with HTML and CSS, and I am developing skills in mobile app development using Flutter  
+        with the goal of applying this knowledge to real work in the future.  
+        Thank you very much for visiting my portfolio website.
+        </p>
+            </section>
+
+            <section id="portfolio" class="card">
+                <h2>Recent Work</h2>
+                <ul class="portfolio-list">
+                  
+                    <ul class="portfolio-list">
+
+                        <li>
+                            <strong style="display: block; text-align: left;">Application: Active Life</strong>
+                            <div class="portfolio-images" style="display: flex; justify-content: center; margin-top: 10px;">
+                              <video width="250" controls style="display: block;">
+                                <source src="videos/active life.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                              </video>
+                            </div>
+                          </li>
+                        
+                          <li>
+                            <strong style="display: block; text-align: left; margin-top: 20px;">Application: Clean Energy</strong>
+                            <div class="portfolio-images" style="margin-top: 10px;">
+                              <img src="images/home cn.png" alt="Energy Site 1">
+                              <img src="images/profile cn.png" alt="Energy Site 2">
+                              <img src="images/search cn.png" alt="Energy Site 3">
+                              <img src="images/quiz.png" alt="Energy Site 4">
+                            </div>
+                          </li>
+                        
+                          <li>
+                            <strong style="display: block; text-align: left; margin-top: 20px;">Application: Calculate BMI</strong>
+                            <div class="portfolio-images" style="display: flex; justify-content: center; margin-top: 10px;">
+                              <video width="250" controls style="display: block;">
+                                <source src="videos/BMI.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                              </video>
+                            </div>
+                          </li>
+                                    </ul>
+              </section>
+              
+
+    
+
+    <section id="education" class="card" style="display: flex; flex-direction: column; gap: 20px;">
+        <!-- หัวข้อด้านบน ชิดซ้าย -->
+        <h2 style="text-align: left; margin-bottom: 30px;">Education</h2>
+      
+        <!-- แถวเนื้อหาหลัก: รูป + ข้อความซ้าย / แผนที่ขวา -->
+        <div style="display: flex; gap: 20px;">
+          
+          <!-- ฝั่งซ้าย: โลโก้และข้อความ -->
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; margin-top: 10px;">
+            <img src="images/logormutt.png" alt="Rajamangala University Logo" style="width:150px; display:block; margin-bottom: 10px;">
+            <p><strong>Rajamangala University of Technology Thanyaburi</strong></p>
+            <p><strong>IS/Computer Information System</strong></p>
+          </div>
+      
+          <!-- ฝั่งขวา: แผนที่ -->
+          <div style="flex: 1; margin-top: 10px;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.6860744486894!2d100.7253582748614!3d14.036613286385574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d78a4a8713c3f%3A0xf019238243532a0!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lij4Liy4LiK4Lih4LiH4LiE4Lil4LiY4Lix4LiN4Lia4Li44Lij4Li1!5e0!3m2!1sth!2sth!4v1748765380195!5m2!1sth!2sth" 
+              width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>📱 Tel:&nbsp;090-499-4190</p>
+      <p>📧 Email:&nbsp;geewachiraporn@gmail.com</p>
+      <p>🌐 Instagram:<a href="https://Instagram.com/xcxrp" target="_blank">&nbsp;xcxrp</a></p>
+    </section>
+  </main>
+
+ <!-- โหลด Font Awesome CDN สำหรับไอคอน -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+<footer>
+  <p>ที่ศึกษาข้อมูลในการเขียนโค้ด จากแหล่งต่าง ๆ</p>
+  <div style="
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 32px;
+  ">
+    <i class="fab fa-html5" title="HTML5" style="color: #e34f26;"></i>
+    <i class="fab fa-css3-alt" title="CSS3" style="color: #264de4;"></i>
+    <i class="fab fa-js-square" title="JavaScript" style="color: #f0db4f;"></i>
+    <i class="fas fa-robot" title="OpenAI ChatGPT" style="color: #10a37f;"></i>
+  </div>
+</footer>
+
+
+</body>
+</html>

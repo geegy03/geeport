@@ -1,0 +1,222 @@
+/* ฟอนต์และรีเซ็ตเบื้องต้น */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* โทนสีน้ำเงินเข้มไล่ระดับ */
+    color: #e0e0e0;         /* ตัวหนังสือสีเทาอ่อน สบายตา */
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* ลิงก์ */
+a {
+    color: #6dd5ed;         /* สีฟ้าอมเขียวสดใส */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: #2193b0;         /* สีฟ้าลึกเวลาชี้ */
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto 60px auto;
+    background: rgba(255,255,255,0.05);
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow:
+      0 8px 32px 0 rgba(31, 38, 135, 0.37),
+      0 0 0 1px rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Header */
+header {
+    width: 100%;
+    background: #1a1a2e;
+    color: #f1f1f1;
+    padding: 35px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-shadow: 0 2px 6px rgba(33, 147, 176, 0.9);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #a9c9d9;
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #55c7f7;
+    border-bottom: 2px solid #55c7f7;
+}
+
+/* Sections - Card */
+.card {
+    background: #ffffff;
+    padding: 40px 40px 50px 40px;
+    margin: 40px 0;
+    border-radius: 24px;
+    box-shadow:
+      0 8px 24px rgba(0, 0, 0, 0.12),
+      0 2px 8px rgba(0, 0, 0, 0.06);
+    color: #222222;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow:
+      0 16px 48px rgba(0, 0, 0, 0.18),
+      0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #0d47a1; /* สีฟ้าเข้ม */
+    font-size: 28px;
+    letter-spacing: 1.1px;
+}
+
+/* รูปโปรไฟล์ */
+.profile-img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 30px auto 40px auto;
+    box-shadow:
+      0 10px 30px rgba(33, 147, 176, 0.6);
+    border: 6px solid #21a1f1;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* รายการผลงาน */
+.portfolio-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.portfolio-list li {
+    margin: 30px 0;
+    position: relative;
+}
+
+/* รูปภาพในแต่ละผลงาน */
+.portfolio-images {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #2193b0 #ddd;
+}
+
+/* scrollbar สวยๆ สำหรับ Chrome/Edge */
+.portfolio-images::-webkit-scrollbar {
+    height: 8px;
+}
+
+.portfolio-images::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 10px;
+}
+
+.portfolio-images::-webkit-scrollbar-thumb {
+    background-color: #2193b0;
+    border-radius: 10px;
+    border: 2px solid #eee;
+}
+
+.portfolio-images img {
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(33, 147, 176, 0.4);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-images img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 12px 30px rgba(33, 147, 176, 0.7);
+}
+
+/* Footer */
+footer {
+  background: #1a1a2e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 25px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+    .profile-img {
+        width: 240px;
+        height: 240px;
+        margin: 25px auto 30px auto;
+    }
+    .portfolio-images img {
+        width: 220px;
+        height: 140px;
+    }
+    .card {
+        padding: 25px 20px 35px 20px;
+    }
+}
